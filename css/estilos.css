@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@media (min-width: 768px) and (max-width: 1023px) {
+  main .seccion-tienda .promociones {
+    grid-template-columns: 2fr 2fr;
+  }
+  main .provincias {
+    grid-template-columns: 2fr 2fr;
+  }
+}
+@media (max-width: 768px) {
+  main .seccion-tienda .promociones {
+    grid-template-columns: 1fr;
+  }
+  main .provincias {
+    grid-template-columns: 1fr;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", serif;
+}
+
+header {
+  width: 100vw;
+  position: fixed;
+  z-index: 2;
+}
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav div a img {
+  width: 50px;
+  background-color: #000;
+}
+header nav div #navbarNav {
+  justify-content: center;
+}
+header nav div #navbarNav ul li {
+  transition: 0.5s;
+}
+header nav div #navbarNav ul li:hover {
+  background-color: #dbd4d4;
+  color: #000;
+  border-radius: 10px;
+}
+header nav div #navbarNav ul li a {
+  color: black;
+}
+header.abajo {
+  background: #000;
+}
+header.abajo nav div #navbarNav ul li a {
+  color: #fff;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+main .hero {
+  width: 100%;
+}
+main .hero img {
+  width: 100%;
+  height: 600px;
+}
+main .hero .contenido-hero {
+  background-color: white;
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+main .banner-nav {
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+}
+main .banner-nav input {
+  display: none;
+}
+main .banner-nav input label .tab-name {
+  color: white;
+  font-family: poppins;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.25);
+  padding: 10px 30px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.25s;
+}
+main .banner-nav input label .tab-content {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background: white;
+  color: black;
+  font-family: poppins;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  opacity: 0;
+  z-index: 0;
+  transition: 0.5s;
+}
+main .banner-nav input input:checked label .tab-name {
+  background: #ffd910;
+  color: black;
+  font-size: 18px;
+  font-weight: 800;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+main .banner-nav input input:checked label .tab-content {
+  opacity: 1;
+  z-index: 1;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+main .portada {
+  width: 100%;
+}
+main .portada img {
+  width: 100%;
+  height: 600px;
+}
+main .argentina {
+  margin-top: 60px;
+  display: grid;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+  place-content: center;
+}
+main .argentina .contenido_arg {
+  width: 90%;
+  margin: 20px;
+}
+main .argentina .contenido_arg img {
+  width: 100%;
+}
+main .provincias {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  flex-wrap: wrap;
+  gap: 10px;
+}
+main .provincias .prov {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid;
+  text-align: left;
+  padding: 30px;
+  transition: 0.5s;
+}
+main .provincias .prov h3 {
+  text-align: center;
+}
+main .provincias .prov:hover {
+  box-shadow: 0 0 10px #000000, 0 0 40px #000000, 0 0 80px #000000;
+  border-color: #ffffff;
+}
+main .provincias .prov img {
+  width: 100%;
+  height: 40%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: -4px -12px 80px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -4px -12px 80px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -4px -12px 80px 0px rgba(0, 0, 0, 0.75);
+}
+
+footer {
+  width: 100%;
+  background-color: black;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+footer .contactos {
+  width: 70%;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer a img {
+  width: 30px;
+  text-align: center;
+  background-color: white;
+}
+footer .redes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  gap: 50px;
+}
+footer .redes li {
+  list-style: none;
+}
+footer .redes li a {
+  text-decoration: none;
+}
+footer .redes li a img {
+  width: 50px;
+  border-radius: 100%;
+}
+
+.portada {
+  width: 100%;
+}
+.portada img {
+  width: 100%;
+  height: 600px;
+}
+
+.seccion-tienda {
+  margin-top: 70px;
+  display: grid;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+  place-content: center;
+}
+.seccion-tienda h2 {
+  font-size: 32px;
+}
+.seccion-tienda .promociones {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 30px;
+  padding: 20px;
+}
+.seccion-tienda .promociones .promo {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid;
+  transition: 0.5s;
+}
+.seccion-tienda .promociones .promo img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+.seccion-tienda .promociones .promo .texto-promo {
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.seccion-tienda .promociones .promo .texto-promo p {
+  margin: 5px;
+}
+.seccion-tienda .promociones .promo .texto-promo .boton {
+  border: 1px solid;
+  border-radius: 10px;
+  background-color: black;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  bottom: 0;
+}
+.seccion-tienda .promociones .promo:hover {
+  box-shadow: 0 0 10px #000000, 0 0 40px #000000, 0 0 80px #000000;
+  border-color: #ffffff;
+}
+
+main .contactos {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  text-align: center;
+  margin-bottom: 20px;
+  border: 1px solid;
+  padding: 20px;
+  border-radius: 10px;
+}
+main .contactos .formulario form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+main .contactos .formulario form select,
+main .contactos .formulario form input,
+main .contactos .formulario form textarea {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+main .contactos .formulario form button {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
+main .parques {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+main .parques .parque {
+  width: 100%;
+  position: relative;
+}
+main .parques .parque .imagen img {
+  width: 100%;
+}
+main .parques .parque .texto {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  color: white;
+  text-align: justify;
+  padding: 0 20px;
+  border-radius: 10px;
+  line-height: 0.5;
+}
+
+/*# sourceMappingURL=estilos.css.map */

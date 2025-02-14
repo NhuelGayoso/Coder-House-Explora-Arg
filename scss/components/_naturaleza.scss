@@ -1,0 +1,33 @@
+main {
+    .parques {
+        width: 80%;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        gap: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        .parque {
+            width: 100%;
+            position: relative;
+
+            .imagen {
+                img {
+                    width: 100%;
+                }
+
+            }
+
+            .texto {
+                background-color: rgb(0, 0, 0,.5) ;
+                position: absolute;
+                bottom: 0;
+                color: white;
+                text-align: justify;
+                padding: 0 20px;
+                border-radius: 10px;
+                line-height: .5;
+            }
+        }
+    }
+}
