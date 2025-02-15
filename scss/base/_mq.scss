@@ -5,12 +5,26 @@
                 grid-template-columns: 2fr 2fr;
             }
         }
-        .provincias{
-            grid-template-columns: 2fr 2fr;
+
+        .argentina {
+            .provincias {
+                grid-template-columns: 2fr 2fr;
+            }
+        }
+
+        .parques {
+            grid-template-columns: 1fr;
+
+        }
+
+        .tarjeta {
+            .tarjeta {
+                flex-direction: column;
+            }
         }
     }
 
-  
+
 
 }
 
@@ -22,8 +36,21 @@
             }
         }
 
-        .provincias{
+        .argentina {
+            .provincias {
+                grid-template-columns: 2fr;
+            }
+        }
+
+        .parques {
             grid-template-columns: 1fr;
+
+        }
+
+        .tarjetas {
+            .tarjeta {
+                flex-direction: column;
+            }
         }
     }
 

@@ -7,5 +7,29 @@ $fuente-oscura:#000;
 $fuente-clara:#fff;
 
 
+
 //! Extend
 
+%fuente-titular{
+    font-weight: 800;
+    font-style: italic;
+    font-size: 36px;
+}
+
+%fuente-titular-secundaria{
+    font-weight: 700;
+    font-style: italic;
+    font-size: 32px;
+}
+
+%fuente-titular-tercearia{
+    font-weight: 600;
+    font-style: italic;
+    font-size: 28px;
+}
+
+%fuente-parrafo{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}

@@ -9,4 +9,15 @@
 body {
     font-family: "Poppins", serif;
 
+    p {
+        @extend %fuente-parrafo
+    }
+
+    h1 {
+        @extend %fuente-titular
+    }
+
+    h2 {
+        @extend %fuente-titular-secundaria
+    }
 }
