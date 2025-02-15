@@ -335,6 +335,7 @@ main .contactos {
   border: 1px solid;
   padding: 20px;
   border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 main .contactos .formulario form {
   width: 80%;
